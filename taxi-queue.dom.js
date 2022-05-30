@@ -37,6 +37,17 @@ function taxiDepart() {
         console.log('people_queue_counter', people_queue_counter)
     }
 }
+
+
+button_depart_taxi.addEventListener('click', function () {
+    taxiQueue.joinQueue();
+    taxiQueue.leaveQueue();
+    taxiQueue.joinTaxiQueue();
+    taxiQueue.queueLength();
+
+    
+
+});
 buttonjoin_people_queue.addEventListener('click', joinPeopleQueue);
 buttonleave_people_queue.addEventListener('click', leavePeopleQueue);
 buttonjoin_taxi_queue.addEventListener('click', joinTaxiQueue);
